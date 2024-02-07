@@ -48,7 +48,7 @@ i{
 }
 section{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 3% 95%;
 }
 section article{
     background-color: var(--background);
@@ -60,17 +60,40 @@ section article{
 .item{
     display: grid;
     grid-template-columns: 20% 80%;
-    margin-left: 2rem;
+    margin-left: 0.6rem;
 }
 .item p{
     font-size: 1.3rem;
+    display: none;
+}
+.containerSubItems .bx-chevron-down{
+    display: none;
+}
+.categoria h4{
+    display: none;
+}
+.botonMenu:active ~ section{
+    display: grid;
+    grid-template-columns: 15% 80%;
 }
 .containerSubItems{
     grid-template-columns: 20% 60% 20%;
 }
+.subItems{
+    display: none;
+    padding-left: 1rem;
+    transition: 2s ease all 0s;
+}
+.containerSubItems:hover .subItems{
+    display: block;
+}
+
 .categoria{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+.categoria h4{
+    padding-left: 1rem;
 }
 .titulo{
     margin: 1rem;
