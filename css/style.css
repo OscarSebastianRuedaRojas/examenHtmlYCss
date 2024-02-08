@@ -195,7 +195,26 @@ aside.active{
     background-image: url(../storage/img/computadores/Accesorio1.jpg);
     background-size: cover;
 }
-
+.tv1{
+    background-image: url(../storage/img/tv/Samsung1.jpg);
+    background-size: cover;
+}
+.tv2{
+    background-image: url(../storage/img/tv/Lg1.jpg);
+    background-size: cover;
+}
+.tv3{
+    background-image: url(../storage/img/tv/Panasonic1.jpg);
+    background-size: cover;
+}
+.tv4{
+    background-image: url(../storage/img/tv/Samsung2.jpg);
+    background-size: cover;
+}
+.tv5{
+    background-image: url(../storage/img/tv/Lg2.jpg);
+    background-size: cover;
+}
 .caja .contenidoCaja{
     width: 100%;
     height: 25%;
