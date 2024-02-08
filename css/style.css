@@ -7,6 +7,7 @@
 }
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 header{
     display: grid;
@@ -47,13 +48,16 @@ i{
     color: var(--colorPrymary);
 }
 section{
+    width: 100vw;
     display: grid;
-    grid-template-columns: 3% 95%;
+    grid-template-columns: 20% 80%;
 }
 section article{
     background-color: var(--background);
     width: 100%;
-    height: 100vh;
+    height: 100vw;
+    overflow-y: scroll;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -62,16 +66,28 @@ section article{
     grid-template-columns: 20% 80%;
     margin-left: 0.6rem;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .item p{
     font-size: 1.3rem;
-    display: none;
+    /* display: none; */
 }
-.containerSubItems .bx-chevron-down{
+/* .containerSubItems .bx-chevron-down{
     display: none;
 }
 .categoria h4{
     display: none;
+} */
+section.active{
+    grid-template-columns: 20% 80%;
 }
+/* aside.active p,
+aside.active .containerSubItems,
+aside.active h4{
+    display: block;
+} */
 .botonMenu:active ~ section{
     display: grid;
     grid-template-columns: 15% 80%;
@@ -108,8 +124,9 @@ section article{
 .containerCajas{
     margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 1rem;
+    row-gap: 1rem;
 }
 .containerCajas .bx-line-chart{
     color: var(--colorLineaArriba);
@@ -118,37 +135,32 @@ section article{
     color: var(--colorLineaAbajo);
 }
 .caja{
-    background-color: var(--colorWhite);
-    width: 90%;
-    border-radius: 10px;
-    padding: 1rem;
-}
-.caja .cantidad{
+    background-image: url(../storage/img/Iphone1.jpg);
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    height: 280px;
+    border-radius: 10px;
 }
-.caja .cantidad h4{
-    font-size: 1.3rem; 
-}
-.caja h6{
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-}
-.cajaMayor{
-    width: 99.7%;
-    height: 8rem;
-    margin-top: 1rem;
-    padding-left: 1rem;
+.caja .contenidoCaja{
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 1px var(--colorPrymary) solid;
     background-color: var(--colorWhite);
-    border-radius: 10px;
-    grid-column-start: 1;
-    grid-column-end: span 4;
 }
-.cajaMayor p{
-    font-size: 1.5rem;
+.contenidoCaja h4{
+    padding-left: 1rem;
+}
+.contenidoCaja .cajaPrecio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 .barra{
     width: 100%;
