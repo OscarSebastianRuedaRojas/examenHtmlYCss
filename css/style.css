@@ -66,6 +66,7 @@ section article{
     grid-template-columns: 20% 80%;
     margin-left: 0.6rem;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -104,6 +105,15 @@ aside:hover{
     z-index: 100;
     transition: all 1s ease 0.2s;
 }
+aside:hover .itemPrincipal{
+    background-color: var(--colorPrymary);
+    border-radius: 7px;
+    padding: 0.2rem 0.7rem;
+    color: white;
+}
+aside:hover .itemPrincipal a{
+    color: white;
+}
 aside:hover p,
 aside:hover h4,
 aside:hover footer{
@@ -116,6 +126,15 @@ aside.active footer{
     visibility: visible;
     transition: all 1s ease 0.2s;
 }
+aside.active .itemPrincipal{
+    background-color: var(--colorPrymary);
+    border-radius: 7px;
+    padding: 0.2rem 0.7rem;
+    color: white;
+}
+aside.active .itemPrincipal a{
+    color: white;
+}
 aside.active{
     width: 100%;
     transition: 1s ease all;
@@ -123,17 +142,6 @@ aside.active{
 .botonMenu:active ~ section{
     display: grid;
     grid-template-columns: 15% 80%;
-}
-.containerSubItems{
-    grid-template-columns: 20% 60% 20%;
-}
-.subItems{
-    display: none;
-    padding-left: 1rem;
-    transition: 2s ease all 0s;
-}
-.containerSubItems:hover .subItems{
-    display: block;
 }
 .bxs-dashboard{
     margin-left: 0.5rem;
