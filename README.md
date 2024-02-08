@@ -1,3 +1,5 @@
 # Examen Html y Css
 
-Se está elaborando la estructura básica de HTML y CSS como preparación para el examen programado para el 8 de febrero. Este proceso implica la creación detallada de la plantilla inicial que servirá como base para el desarrollo posterior del proyecto. Se están teniendo en cuenta diversos aspectos, como la organización jerárquica de los elementos HTML, la aplicación de estilos CSS para la presentación visual y la implementación de prácticas recomendadas para garantizar la legibilidad y mantenibilidad del código.
+Se realizo el proyecto con la idea de una pagina con el nombre de CampusShop, se realizo todas las indicaciones dadas en el proyecto y demas cosas, la pagina es sobre aparatos tecnologicos, usando los principales colores de campus, que son azul y blanco, Se realizo un uso de grid y flez en el proyecto.
+
+### Video PC
