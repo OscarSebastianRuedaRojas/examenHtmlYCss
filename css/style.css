@@ -147,73 +147,24 @@ aside.active{
     color: var(--colorLineaAbajo);
 }
 .caja{
-    background-image: url(../storage/img/celulares/Iphone1.jpg);
-    background-size: cover;
+    background-color: var(--colorWhite);
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     width: 90%;
     height: 330px;
     border-radius: 10px;
 }
-.celular1{
-    background-image: url(../storage/img/celulares/Iphone1.jpg);
-    background-size: cover;
+.img img{
+    width: 80%;
 }
-.celular2{
-    background-image: url(../storage/img/celulares/Iphone2.jpg);
-    background-size: cover;
-}
-.celular3{
-    background-image: url(../storage/img/celulares/Motorola1.jpg);
-    background-size: cover;
-}
-.celular4{
-    background-image: url(../storage/img/celulares/Xiaomi1.jpg);
-    background-size: cover;
-}
-.celular5{
-    background-image: url(../storage/img/celulares/Xiaomi2.jpg);
-    background-size: cover;
-}
-.computador1{
-    background-image: url(../storage/img/computadores/Portatil1.jpg);
-    background-size: cover;
-}
-.computador2{
-    background-image: url(../storage/img/computadores/Gaming1.jpg);
-    background-size: cover;
-}
-.computador3{
-    background-image: url(../storage/img/computadores/DeMesa1.jpg);
-    background-size: cover;
-}
-.computador4{
-    background-image: url(../storage/img/computadores/Portatil4.jpg);
-    background-size: cover;
-}
-.computador5{
-    background-image: url(../storage/img/computadores/Accesorio1.jpg);
-    background-size: cover;
-}
-.tv1{
-    background-image: url(../storage/img/tv/Samsung1.jpg);
-    background-size: cover;
-}
-.tv2{
-    background-image: url(../storage/img/tv/Lg1.jpg);
-    background-size: cover;
-}
-.tv3{
-    background-image: url(../storage/img/tv/Panasonic1.jpg);
-    background-size: cover;
-}
-.tv4{
-    background-image: url(../storage/img/tv/Samsung2.jpg);
-    background-size: cover;
-}
-.tv5{
-    background-image: url(../storage/img/tv/Lg2.jpg);
-    background-size: cover;
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
 }
 .caja .contenidoCaja{
     width: 100%;
