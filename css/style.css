@@ -147,13 +147,33 @@ aside.active{
     color: var(--colorLineaAbajo);
 }
 .caja{
-    background-image: url(../storage/img/Iphone1.jpg);
+    background-image: url(../storage/img/celulares/Iphone1.jpg);
     background-size: cover;
     display: flex;
     align-items: flex-end;
     width: 90%;
     height: 330px;
     border-radius: 10px;
+}
+.celular1{
+    background-image: url(../storage/img/celulares/Iphone1.jpg);
+    background-size: cover;
+}
+.celular2{
+    background-image: url(../storage/img/celulares/Iphone2.jpg);
+    background-size: cover;
+}
+.celular3{
+    background-image: url(../storage/img/celulares/Motorola1.jpg);
+    background-size: cover;
+}
+.celular4{
+    background-image: url(../storage/img/celulares/Xiaomi1.jpg);
+    background-size: cover;
+}
+.celular5{
+    background-image: url(../storage/img/celulares/Xiaomi2.jpg);
+    background-size: cover;
 }
 .caja .contenidoCaja{
     width: 100%;
