@@ -175,6 +175,27 @@ aside.active{
     background-image: url(../storage/img/celulares/Xiaomi2.jpg);
     background-size: cover;
 }
+.computador1{
+    background-image: url(../storage/img/computadores/Portatil1.jpg);
+    background-size: cover;
+}
+.computador2{
+    background-image: url(../storage/img/computadores/Gaming1.jpg);
+    background-size: cover;
+}
+.computador3{
+    background-image: url(../storage/img/computadores/DeMesa1.jpg);
+    background-size: cover;
+}
+.computador4{
+    background-image: url(../storage/img/computadores/Portatil4.jpg);
+    background-size: cover;
+}
+.computador5{
+    background-image: url(../storage/img/computadores/Accesorio1.jpg);
+    background-size: cover;
+}
+
 .caja .contenidoCaja{
     width: 100%;
     height: 25%;
