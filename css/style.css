@@ -77,6 +77,15 @@ aside{
     font-size: 1.3rem;
     visibility: hidden;
 }
+.item:hover{
+    background-color: var(--colorPrymary);
+    border-radius: 7px;
+    padding: 0.2rem 0.7rem;
+    color: white;
+}
+.item:hover a{
+    color: white;
+}
 aside footer{
     visibility: hidden;
     padding-left: 2.5rem;
@@ -88,6 +97,18 @@ aside footer{
 }
 section.active{
     grid-template-columns: 20% 80%;
+}
+aside:hover{
+    width: 300px;
+    position: relative;
+    z-index: 100;
+    transition: all 1s ease 0.2s;
+}
+aside:hover p,
+aside:hover h4,
+aside:hover footer{
+    visibility: visible;
+    transition: all 1s ease 0.7s;
 }
 aside.active p,
 aside.active h4,
@@ -195,33 +216,80 @@ aside.active{
 .Agregar:hover{
     box-shadow: 1px 2px 8px var(--colorPrymary);
 }
-.barra{
+.containerCarrito{
     width: 100%;
-    border-radius: 15px;
-    height: 1rem;
-    background-color: var(--backgroundBarra);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+    padding: 0rem 1rem;
 }
-.barra .rellenoBarra1{
-    width: 40%;
-    height: 100%;
-    border-radius: 15px;
-    background-color: var(--colorPrymary);
+.itemCarrito{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 97%;
+    background-color: var(--colorWhite);
 }
-.barra .rellenoBarra2{
+.itemCarrito div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemCarrito div p{
+    font-size: 1.5rem;
+    color: var(--colorPrymary);
+}
+.itemCarrito .imgCarrito{
+    width: 150px;
+    display: flex;
+    padding-left: 20%;
+}
+.imgCarrito img{
+    width: 100%;
+}
+.itemCarrito .Cantidad input{
     width: 60%;
-    height: 100%;
-    border-radius: 15px;
-    background-color: var(--colorPrymary);
 }
-.barra .rellenoBarra3{
-    width: 30%;
-    height: 100%;
-    border-radius: 15px;
-    background-color: var(--colorPrymary);
+.itemCarrito i{
+    font-size: 6rem;
 }
-.barra .rellenoBarra4{
-    width: 80%;
-    height: 100%;
-    border-radius: 15px;
+.pago{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pago .vaciar button{
+    padding: 0.2rem 0.5rem;
     background-color: var(--colorPrymary);
+    border: none;
+    font-size: 1.3rem;
+    color: var(--colorWhite);
+    border-radius: 7px;
+}
+.pago .precioTotalContainer{
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorWhite);
+    border-radius: 10px;
+    height: 60%;
+    width: 20%;
+}
+.pago .precioTotalContainer .precioTotal p{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    color: var(--colorPrymary);
+}
+.pago .precioTotalContainer .containerBotonPago button{
+    padding: 0.2rem 0.5rem;
+    margin-right: 1rem;
+    background-color: var(--colorPrymary);
+    color: var(--colorWhite);
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 7px;
 }
